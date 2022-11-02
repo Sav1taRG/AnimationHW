@@ -8,9 +8,9 @@
 struct SpringAnimation {
     let preset: String
     let curve: String
-    let force: Float
-    let duration: Float
-    let delay: Float
+    let force: Double
+    let duration: Double
+    let delay: Double
     
     var description: String {
         """
@@ -26,8 +26,8 @@ struct SpringAnimation {
         SpringAnimation(
             preset: DataStore.shared.animations.randomElement()?.rawValue ?? "",
             curve: DataStore.shared.curves.randomElement()?.rawValue ?? "",
-            force: Float.random(in: 1...3),
-            duration: Float.random(in: 1...3),
-            delay: 0.3)
+            force: .random(in: 1...2),
+            duration: .random(in: 1...2),
+            delay: .random(in: 0.1...0.5))
     }
 }

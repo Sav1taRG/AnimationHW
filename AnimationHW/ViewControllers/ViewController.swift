@@ -14,9 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet var paramDescLB: UILabel!
     
     private var randomAnimation = SpringAnimation.getRandomAnimations()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        viewToAnimate.layer.cornerRadius = 10
+        paramDescLB.text = randomAnimation.description
     }
 
     @IBAction func buttonTouched(_ sender: SpringButton) {
@@ -26,6 +28,12 @@ class ViewController: UIViewController {
         viewToAnimate.force = randomAnimation.force
         viewToAnimate.duration = randomAnimation.duration
         viewToAnimate.delay = randomAnimation.delay
+        
+        viewToAnimate.animate()
+        
+        randomAnimation = SpringAnimation.getRandomAnimations()
+       
+        sender.setTitle("Run \(randomAnimation.preset)", for: .normal)
     }
     
 }
