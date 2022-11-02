@@ -8,21 +8,26 @@
 import UIKit
 import SpringAnimation
 
-class ViewController: UIViewController {
+class SpringAnimationViewController: UIViewController {
 
+    // MARK: IB Outlets
     @IBOutlet var viewToAnimate: SpringView!
     @IBOutlet var paramDescLB: UILabel!
     
+    // MARK: Private Properties
     private var randomAnimation = SpringAnimation.getRandomAnimations()
     
+    // MARK: View Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         viewToAnimate.layer.cornerRadius = 10
         paramDescLB.text = randomAnimation.description
     }
 
+    // MARK: IB Actions
     @IBAction func buttonTouched(_ sender: SpringButton) {
         paramDescLB.text = randomAnimation.description
+        
         viewToAnimate.animation = randomAnimation.preset
         viewToAnimate.curve = randomAnimation.curve
         viewToAnimate.force = randomAnimation.force

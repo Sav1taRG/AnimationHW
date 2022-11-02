@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3005D4D129116DFF00BAAB71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3005D4D029116DFF00BAAB71 /* AppDelegate.swift */; };
 		3005D4D329116DFF00BAAB71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3005D4D229116DFF00BAAB71 /* SceneDelegate.swift */; };
-		3005D4D529116DFF00BAAB71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3005D4D429116DFF00BAAB71 /* ViewController.swift */; };
+		3005D4D529116DFF00BAAB71 /* SpringAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3005D4D429116DFF00BAAB71 /* SpringAnimationViewController.swift */; };
 		3005D4D829116DFF00BAAB71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3005D4D629116DFF00BAAB71 /* Main.storyboard */; };
 		3005D4DA29116E0200BAAB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3005D4D929116E0200BAAB71 /* Assets.xcassets */; };
 		3005D4DD29116E0200BAAB71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3005D4DB29116E0200BAAB71 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		3005D4CD29116DFF00BAAB71 /* AnimationHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3005D4D029116DFF00BAAB71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3005D4D229116DFF00BAAB71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3005D4D429116DFF00BAAB71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3005D4D429116DFF00BAAB71 /* SpringAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationViewController.swift; sourceTree = "<group>"; };
 		3005D4D729116DFF00BAAB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3005D4D929116E0200BAAB71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3005D4DC29116E0200BAAB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		3005D4E429116E3D00BAAB71 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3005D4D429116DFF00BAAB71 /* ViewController.swift */,
+				3005D4D429116DFF00BAAB71 /* SpringAnimationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3005D4D529116DFF00BAAB71 /* ViewController.swift in Sources */,
+				3005D4D529116DFF00BAAB71 /* SpringAnimationViewController.swift in Sources */,
 				3039D291291305680057B6A2 /* DataStore.swift in Sources */,
 				3005D4D129116DFF00BAAB71 /* AppDelegate.swift in Sources */,
 				3039D29429130AF20057B6A2 /* Animation.swift in Sources */,
