@@ -25,7 +25,7 @@ class SpringAnimationViewController: UIViewController {
     }
 
     // MARK: IB Actions
-    @IBAction func buttonTouched(_ sender: SpringButton) {
+    @IBAction func buttonTouched(_ sender: UIButton) {
         paramDescLB.text = randomAnimation.description
         
         viewToAnimate.animation = randomAnimation.preset
